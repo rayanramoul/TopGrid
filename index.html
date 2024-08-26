@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopGrids</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo.png" alt="TopGrids Logo" id="logo">
+        <h1>TopGrids</h1>
+    </header>
+
+    <main id="home-screen">
+        <h2>Your TopGrids</h2>
+        <div id="topgrids-list"></div>
+        <button id="create-new-btn">Create New TopGrid</button>
+    </main>
+
+    <div id="editor-screen" class="hidden">
+        <h2>Create or Edit Your TopGrid</h2>
+        <input type="text" id="topgrid-title" placeholder="Enter TopGrid title">
+        <div id="categories"></div>
+        <button id="add-category-btn">Add Category</button>
+        <button id="finish-btn">Finish & Save</button>
+    </div>
+
+    <div id="grid-container" class="hidden">
+        <h2 id="grid-title"></h2>
+        <div id="grid"></div>
+        <button id="edit-btn">Edit TopGrid</button>
+        <button id="back-to-home-btn">Back to Home</button>
+        <button id="export-btn">Export as JPG</button>
+        <button id="share-btn">Share TopGrid</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
